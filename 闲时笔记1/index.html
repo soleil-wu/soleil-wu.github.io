@@ -20,18 +20,18 @@
     var CONFIG = {"hostname":"soleil-wu.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="捣腾博客相关这两天终于把idea安装了Project的排布方式加上不同颜色让看很多文件变得很方便当然，之前用NotePad也有NotePad的好处 针对博客做了一些小改动： 建了个相册页面在网上找了一个很心水的悬停效果对图片的自适应也大体满意 放到自己博客的过程中学习到一个比较有用的CSS3属性：box-sizing这个属性是对原本的盒子模型的优化通过将HTML元素构造为“框” 将元素的内外边距放">
+  <meta name="description" content="捣腾博客相关 这两天终于把idea安装了 Project的排布方式加上不同颜色让看很多文件变得很方便 当然，之前用NotePad也有NotePad的好处 针对博客做了一些小改动： ¶建了个相册页面 在网上找了一个很心水的悬停效果 对图片的自适应也大体满意 放到自己博客的过程中学习到一个比较有用的CSS3属性：box-sizing 这个属性是对原本的盒子模型的优化 通过将HTML元素构造为“框” 将">
 <meta property="og:type" content="article">
 <meta property="og:title" content="闲时笔记1">
 <meta property="og:url" content="https://soleil-wu.github.io/%E9%97%B2%E6%97%B6%E7%AC%94%E8%AE%B01/">
 <meta property="og:site_name" content="Soleil&#39;s Blog">
-<meta property="og:description" content="捣腾博客相关这两天终于把idea安装了Project的排布方式加上不同颜色让看很多文件变得很方便当然，之前用NotePad也有NotePad的好处 针对博客做了一些小改动： 建了个相册页面在网上找了一个很心水的悬停效果对图片的自适应也大体满意 放到自己博客的过程中学习到一个比较有用的CSS3属性：box-sizing这个属性是对原本的盒子模型的优化通过将HTML元素构造为“框” 将元素的内外边距放">
+<meta property="og:description" content="捣腾博客相关 这两天终于把idea安装了 Project的排布方式加上不同颜色让看很多文件变得很方便 当然，之前用NotePad也有NotePad的好处 针对博客做了一些小改动： ¶建了个相册页面 在网上找了一个很心水的悬停效果 对图片的自适应也大体满意 放到自己博客的过程中学习到一个比较有用的CSS3属性：box-sizing 这个属性是对原本的盒子模型的优化 通过将HTML元素构造为“框” 将">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-07-06T09:50:05.000Z">
-<meta property="article:modified_time" content="2020-07-06T12:08:42.016Z">
+<meta property="article:modified_time" content="2020-07-07T09:33:59.478Z">
 <meta property="article:author" content="Soleil">
 <meta property="article:tag" content="CSS">
-<meta property="article:tag" content="纪录">
+<meta property="article:tag" content="记录">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="https://soleil-wu.github.io/%E9%97%B2%E6%97%B6%E7%AC%94%E8%AE%B01/">
@@ -269,20 +269,63 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="捣腾博客相关"><a href="#捣腾博客相关" class="headerlink" title="捣腾博客相关"></a>捣腾博客相关</h1><p>这两天终于把idea安装了<br>Project的排布方式加上不同颜色让看很多文件变得很方便<br>当然，之前用NotePad也有NotePad的好处</p>
+        <h1>捣腾博客相关</h1>
+<p>这两天终于把idea安装了<br>
+Project的排布方式加上不同颜色让看很多文件变得很方便<br>
+当然，之前用NotePad也有NotePad的好处</p>
 <p>针对博客做了一些小改动：</p>
-<h2 id="建了个相册页面"><a href="#建了个相册页面" class="headerlink" title="建了个相册页面"></a>建了个相册页面</h2><p>在网上找了一个很心水的悬停效果<br>对图片的自适应也大体满意</p>
-<p>放到自己博客的过程中学习到一个比较有用的CSS3属性：<code>box-sizing</code><br>这个属性是对原本的盒子模型的优化<br>通过将HTML元素构造为“框” 将元素的内外边距放入框中<br>原本元素的宽度定义的只是content的宽度<br>此时宽度被定义为“width=content+padding+border”<br>这样做的好处是只要以百分比方式设置好框的width<br>即使padding和border是以绝对值设置的<br>元素的content部分能够随着实际的宽度自动收缩</p>
+<h2 id="建了个相册页面"><a class="header-anchor" href="#建了个相册页面">¶</a>建了个相册页面</h2>
+<p>在网上找了一个很心水的悬停效果<br>
+对图片的自适应也大体满意</p>
+<p>放到自己博客的过程中学习到一个比较有用的CSS3属性：<code>box-sizing</code><br>
+这个属性是对原本的盒子模型的优化<br>
+通过将HTML元素构造为“框” 将元素的内外边距放入框中<br>
+原本元素的宽度定义的只是content的宽度<br>
+此时宽度被定义为“width=content+padding+border”<br>
+这样做的好处是只要以百分比方式设置好框的width<br>
+即使padding和border是以绝对值设置的<br>
+元素的content部分能够随着实际的宽度自动收缩</p>
 <p>关于盒子模型和这一属性，这篇文章提供了很高的参考价值；</p>
 <blockquote>
-<p>《从box-sizing:border-box属性入手，来了解盒模型》:<br><span class="exturl" data-url="aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2NzgwMzE3L2FydGljbGUvZGV0YWlscy84MDczNjUxND91dG1fc291cmNlPWJsb2d4Z3d6Mw==">https://blog.csdn.net/qq_26780317/article/details/80736514?utm_source=blogxgwz3<i class="fa fa-external-link-alt"></i></span></p>
+<p>《从box-sizing:border-box属性入手，来了解盒模型》:<br>
+<span class="exturl" data-url="aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2NzgwMzE3L2FydGljbGUvZGV0YWlscy84MDczNjUxND91dG1fc291cmNlPWJsb2d4Z3d6Mw==">https://blog.csdn.net/qq_26780317/article/details/80736514?utm_source=blogxgwz3<i class="fa fa-external-link-alt"></i></span></p>
 </blockquote>
-<p>在制造图片的上下参差感时，用到了<code>nth-child(n)</code>这个选择器<br>意为匹配属于其父元素的第n个子元素<br>通过an+b简单的表达式能够比较灵活地选择元素<br>此外，还略微学习了一些SVG的知识<br>不过，相册的具体页面还没搞<br>也是在思考以怎样的方式布局<br>特别是想兼顾加载速度和美观度</p>
-<h2 id="更换了背景图"><a href="#更换了背景图" class="headerlink" title="更换了背景图"></a>更换了背景图</h2><p>把式的背景换掉了TT<br>实在是因为图片太大了<br>虽然用压缩工具压了还是很大</p>
-<h2 id="关闭了自建分类页的目录"><a href="#关闭了自建分类页的目录" class="headerlink" title="关闭了自建分类页的目录"></a>关闭了自建分类页的目录</h2><p>如果在文章中使用标题标签对 Hexo会自动生成文章目录<br>照道理来讲自建的分类页面不应该适用这一规则<br>但建相册页面时用到了h2标签对 结果出现了目录<br>百度提供了一些老版本下更改sidebar.swig的办法<br>然后发现新版根本不用这么麻烦<br>只要在新建页面的md文档中的Front-matter区域把toc关掉就好：</p>
+<p>在制造图片的上下参差感时，用到了<code>nth-child(n)</code>这个选择器<br>
+意为匹配属于其父元素的第n个子元素<br>
+通过an+b简单的表达式能够比较灵活地选择元素<br>
+此外，还略微学习了一些SVG的知识<br>
+不过，相册的具体页面还没搞<br>
+也是在思考以怎样的方式布局<br>
+特别是想兼顾加载速度和美观度</p>
+<h2 id="更换了背景图"><a class="header-anchor" href="#更换了背景图">¶</a>更换了背景图</h2>
+<p>把式的背景换掉了TT<br>
+实在是因为图片太大了<br>
+虽然用压缩工具压了还是很大</p>
+<h2 id="关闭了自建分类页的目录"><a class="header-anchor" href="#关闭了自建分类页的目录">¶</a>关闭了自建分类页的目录</h2>
+<p>如果在文章中使用标题标签对 Hexo会自动生成文章目录<br>
+照道理来讲自建的分类页面不应该适用这一规则<br>
+但建相册页面时用到了h2标签对 结果出现了目录<br>
+百度提供了一些老版本下更改sidebar.swig的办法<br>
+然后发现新版根本不用这么麻烦<br>
+只要在新建页面的md文档中的Front-matter区域把toc关掉就好：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">toc:</span><br><span class="line">  enable: false</span><br></pre></td></tr></table></figure>
-<h1 id="阅读笔记"><a href="#阅读笔记" class="headerlink" title="阅读笔记"></a>阅读笔记</h1><p>看到黄铮卸任拼多多CEO的新闻<br>感觉这是一个很有决断力的人<br>这样一个聪明人做拼多多绝不仅是看到所谓下沉市场的机会<br>而是看清了即便是一二线城市的电商用户 其购买需求和使用场景也并非单一的<br>既有高单价商品的购买需求 也有低维更日常的需求<br>只是既然集中在低单价商品上<br>感觉拼多多的GMV增长和利润率仍有很强的不确定性<br>有空看下具体数据~</p>
-<p>近期美国的BLM运动愈演愈烈<br>人类文明进步到今天为何还会有这样的歧视乃至敌视等问题暂且不论<br>只是在中间演变出来的种种话题间<br>人脸识别技术中”洗白奥巴马“的一条Twitter引发了对技术中立的讨论<br>技术本身是没有善恶对错这类价值观的，人才有价值观。<br>但技术是有所谓的使用场景的，由此带来了技术的倾向性。<br>技术的倾向性使其有如具有引力一般，其中一些因此更容易吸引和指向人性中孱弱的部分。<br>很多人是难以挣脱的。归根到底还在于人本身啊。</p>
+<h1>阅读笔记</h1>
+<p>看到黄铮卸任拼多多CEO的新闻<br>
+感觉这是一个很有决断力的人<br>
+这样一个聪明人做拼多多绝不仅是看到所谓下沉市场的机会<br>
+而是看清了即便是一二线城市的电商用户 其购买需求和使用场景也并非单一的<br>
+既有高单价商品的购买需求 也有低维更日常的需求<br>
+只是既然集中在低单价商品上<br>
+感觉拼多多的GMV增长和利润率仍有很强的不确定性<br>
+有空看下具体数据~</p>
+<p>近期美国的BLM运动愈演愈烈<br>
+人类文明进步到今天为何还会有这样的歧视乃至敌视等问题暂且不论<br>
+只是在中间演变出来的种种话题间<br>
+人脸识别技术中”洗白奥巴马“的一条Twitter引发了对技术中立的讨论<br>
+技术本身是没有善恶对错这类价值观的，人才有价值观。<br>
+但技术是有所谓的使用场景的，由此带来了技术的倾向性。<br>
+技术的倾向性使其有如具有引力一般，其中一些因此更容易吸引和指向人性中孱弱的部分。<br>
+很多人是难以挣脱的。归根到底还在于人本身啊。</p>
 
     </div>
 
@@ -306,7 +349,7 @@
       <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/CSS/" rel="tag"># CSS</a>
-              <a href="/tags/%E7%BA%AA%E5%BD%95/" rel="tag"># 纪录</a>
+              <a href="/tags/%E8%AE%B0%E5%BD%95/" rel="tag"># 记录</a>
           </div>
 
         
@@ -318,7 +361,10 @@
     <a href="/Web%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/" rel="prev" title="Web前端基础学习记录">
       <i class="fa fa-chevron-left"></i> Web前端基础学习记录
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/%E9%98%B6%E6%AE%B5%E6%80%9D%E8%80%831%EF%BC%9A%E5%89%8D%E8%BF%9B%EF%BC%81/" rel="next" title="阶段思考1：前进！">
+      阶段思考1：前进！ <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -378,7 +424,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#捣腾博客相关"><span class="nav-number">1.</span> <span class="nav-text">捣腾博客相关</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#建了个相册页面"><span class="nav-number">1.1.</span> <span class="nav-text">建了个相册页面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更换了背景图"><span class="nav-number">1.2.</span> <span class="nav-text">更换了背景图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关闭了自建分类页的目录"><span class="nav-number">1.3.</span> <span class="nav-text">关闭了自建分类页的目录</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#阅读笔记"><span class="nav-number">2.</span> <span class="nav-text">阅读笔记</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#"><span class="nav-number">1.</span> <span class="nav-text">捣腾博客相关</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#建了个相册页面"><span class="nav-number">1.1.</span> <span class="nav-text">建了个相册页面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更换了背景图"><span class="nav-number">1.2.</span> <span class="nav-text">更换了背景图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关闭了自建分类页的目录"><span class="nav-number">1.3.</span> <span class="nav-text">关闭了自建分类页的目录</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#"><span class="nav-number">2.</span> <span class="nav-text">阅读笔记</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -394,14 +440,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-count">12</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
