@@ -197,7 +197,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://soleil-wu.github.io/Web%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/">
+    <link itemprop="mainEntityOfPage" href="https://soleil-wu.github.io/%E9%97%B2%E6%97%B6%E7%AC%94%E8%AE%B01/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -211,7 +211,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/Web%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/" class="post-title-link" itemprop="url">Web前端基础学习记录</a>
+            <a href="/%E9%97%B2%E6%97%B6%E7%AC%94%E8%AE%B01/" class="post-title-link" itemprop="url">闲时笔记1</a>
         </h2>
 
         <div class="post-meta">
@@ -221,7 +221,7 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2020-06-27 14:48:38" itemprop="dateCreated datePublished" datetime="2020-06-27T14:48:38+08:00">2020-06-27</time>
+              <time title="创建时间：2020-07-06 17:50:05" itemprop="dateCreated datePublished" datetime="2020-07-06T17:50:05+08:00">2020-07-06</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -229,12 +229,12 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
+                  <a href="/categories/%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a>
                 </span>
             </span>
 
           
-            <span id="/Web%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/" class="post-meta-item leancloud_visitors" data-flag-title="Web前端基础学习记录" title="阅读次数">
+            <span id="/%E9%97%B2%E6%97%B6%E7%AC%94%E8%AE%B01/" class="post-meta-item leancloud_visitors" data-flag-title="闲时笔记1" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -249,8 +249,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/Web%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/Web%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/" itemprop="commentCount"></span>
+    <a title="valine" href="/%E9%97%B2%E6%97%B6%E7%AC%94%E8%AE%B01/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/%E9%97%B2%E6%97%B6%E7%AC%94%E8%AE%B01/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -265,367 +265,64 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1>HTML部分</h1>
-<h2 id="概述"><a class="header-anchor" href="#概述">¶</a>概述</h2>
-<p><code>&lt;!doctype&gt;</code><br>
-浏览器将按标准模式解析渲染页面。</p>
-<p><code>&lt;head&gt;&lt;/head&gt;</code><br>
-设置网页文档的头部信息，一般不会显示浏览器窗口中。</p>
-<p><code>&lt;tittle&gt;&lt;/tittle&gt;</code><br>
-设置网页文档的标题。显示在浏览器的标签栏或选项卡中。<br>
-给搜索引擎索引。</p>
-<p><code>&lt;meta&gt;</code><br>
-定义文档的元数据。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name&#x3D;&quot;keywords&quot; conetent&#x3D;&quot;关键词1,关键词2,关键词3&quot;&gt;</span><br><span class="line">&lt;meta name&#x3D;&quot;description&quot; conetent&#x3D;&quot;xxxx&quot;&gt;</span><br><span class="line">&lt;meta http-equiv&#x3D;&quot;refresh&quot; content&#x3D;&quot;刷新间隔时间;url&#x3D;页面地址&quot;&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="常用标签"><a class="header-anchor" href="#常用标签">¶</a>常用标签</h2>
-<h3 id="文本标签"><a class="header-anchor" href="#文本标签">¶</a>文本标签</h3>
-<p><code>&lt;p align=&quot;对齐方式&quot;&gt; &lt;/p&gt; /*align: left center right*/</code><br>
-默认隔行换行，段落有16px的上外边距和下外边距。</p>
-<p><code>&lt;br&gt;或者&lt;br /&gt;</code><br>
-单标签。用于换行。连续使用两个<code>&lt;br&gt;</code>将产生一个空行。</p>
-<p><code>&lt;h1&gt;&lt;/h1&gt;</code><br>
-标题。共有6级。默认加粗且与下行产生一空行。</p>
-<p><code>&lt;strong&gt;&lt;/strong&gt;</code><br>
-加粗，语气加重。该标签修饰的文本更容易吸引搜索引擎。</p>
-<p><code>&lt;em&gt;&lt;/em&gt;</code><br>
-斜体。又类似<code>&lt;strong&gt;&lt;/strong&gt;</code>的作用，但语气较之稍弱。</p>
-<p><code>&amp;nbsp;</code><br>
-不换行键入空格。默认情况下在不同浏览器中显示的宽度有所不同。最好使用CSS样式属性<code>text-indent</code>来设置。</p>
-<p><code>&amp;实体名称;</code><br>
-输入特殊字符。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">span &#123;  </span><br><span class="line">    color: red;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;style&gt;</span><br><span class="line"></span><br><span class="line">&lt;span&gt;&lt;&#x2F;span&gt;</span><br></pre></td></tr></table></figure>
-<p>装饰性标签，设置文本的视觉差异。</p>
-<h3 id="文档结构标签"><a class="header-anchor" href="#文档结构标签">¶</a>文档结构标签</h3>
-<p><code>&lt;header&gt;&lt;/header&gt;</code><br>
-可以作为网页或者任何一块元素的头部信息。<br>
-不能嵌套<code>&lt;header&gt; ``&lt;footer&gt;</code>。</p>
-<p><code>&lt;article&gt;独立内容&lt;/article&gt;</code></p>
-<p><code>&lt;section id=&quot;块主题&quot;&gt;块内容&lt;/section&gt;</code><br>
-更多是从语义上对内容进行分块。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;nav&gt;</span><br><span class="line">     &lt;ul&gt;</span><br><span class="line">        &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;导航1&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;</span><br><span class="line">        &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;导航2&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;</span><br><span class="line">    &lt;&#x2F;ul&gt;</span><br><span class="line">&lt;&#x2F;nav&gt;</span><br></pre></td></tr></table></figure>
-<p><code>&lt;aside&gt;侧边栏内容&lt;/aside&gt;</code></p>
-<p><code>&lt;footer&gt;页脚内容&lt;/footer&gt;</code></p>
-<h3 id="多媒体内容标签"><a class="header-anchor" href="#多媒体内容标签">¶</a>多媒体内容标签</h3>
-<p><code>&lt;img src=&quot;图片文件路径&quot; tittle=&quot;图片描述信息&quot; alt=&quot;图片无法显示时的替换信息&quot;&gt;</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;embed src&#x3D;&quot;多媒体内容_URL&quot;&gt;&lt;&#x2F;embed&gt;</span><br><span class="line">&lt;video src&#x3D;&quot;视频file_URL&quot;&gt;&lt;&#x2F;video&gt;</span><br><span class="line">&lt;audio src&#x3D;&quot;音频file_URL&quot;&gt;&lt;&#x2F;audio&gt;</span><br></pre></td></tr></table></figure>
-<p>HTML 5 中的新标签。</p>
-<h3 id="列表标签"><a class="header-anchor" href="#列表标签">¶</a>列表标签</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;ol type&#x3D;&quot;1 A a i Ⅰ&quot; start&#x3D;&quot;&quot;&gt;</span><br><span class="line">    &lt;li&gt;列表项一&lt;&#x2F;li&gt;</span><br><span class="line">    &lt;li&gt;列表项二&lt;&#x2F;li&gt;</span><br><span class="line">&lt;&#x2F;ol&gt;</span><br></pre></td></tr></table></figure>
-<p>有序列表。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--项目列表--&gt;</span><br><span class="line">&lt;ul type&#x3D;&quot;disc circle square&quot;&gt;</span><br><span class="line">    &lt;li&gt;列表项一&lt;&#x2F;li&gt;</span><br><span class="line">    &lt;li&gt;列表项二&lt;&#x2F;li&gt;</span><br><span class="line">&lt;&#x2F;ul&gt;</span><br><span class="line"></span><br><span class="line">&lt;!--定义列表--&gt;</span><br><span class="line">&lt;dl&gt;</span><br><span class="line">    &lt;dt&gt;名词一&lt;&#x2F;dt&gt;</span><br><span class="line">        &lt;dd&gt;解释一&lt;&#x2F;dd&gt;</span><br><span class="line">        &lt;dd&gt;解释二&lt;&#x2F;dd&gt;</span><br><span class="line">&lt;&#x2F;dl&gt;</span><br></pre></td></tr></table></figure>
-<p>无序列表。</p>
-<h3 id="div标签"><a class="header-anchor" href="#div标签">¶</a>div标签</h3>
-<p><code>&lt;div&gt;&lt;/div&gt;</code><br>
-每个<code>&lt;div&gt;</code>标签独占一行，其宽度自动填满父元素宽度，并和相邻的块级元素依次垂直排列。</p>
-<h2 id="元素类型"><a class="header-anchor" href="#元素类型">¶</a>元素类型</h2>
-<p><strong>block块元素：div p h1-h6 ul ol dt dd section header footer nav</strong></p>
-<p><strong>inline行内元素：span a em strong</strong></p>
-<ul>
-<li>不可设置height width</li>
-<li>不会独占一行</li>
-<li>不可以设置上下方向的外边距</li>
-</ul>
-<p><strong>inline-block行内块元素</strong></p>
-<ul>
-<li>同一行</li>
-<li>可以设置height width</li>
-<li>可以设置4个方向的内外边距</li>
-</ul>
-<h2 id="超链接"><a class="header-anchor" href="#超链接">¶</a>超链接</h2>
-<p><code>&lt;a href=&quot;目标端点&quot; target=&quot;目标窗口名称&quot;&gt;源端点&lt;/a&gt;</code></p>
-<h3 id="href属性值"><a class="header-anchor" href="#href属性值">¶</a>href属性值</h3>
-<ul>
-<li>URL
-<ul>
-<li>http://</li>
-<li>ftp:// 进入文件传输服务器</li>
-<li>telnet:// 启动远程登录方式</li>
-<li>news:// 启动新闻讨论组</li>
-<li>mailto:<br>
-<code>&lt;a href=&quot;mailto:邮件地址1?subject=content&amp;cc=邮件地址2&amp;bcc=邮件地址3&quot;&gt;源端点&lt;/a&gt;</code></li>
-</ul>
-</li>
-<li>javascript:code;</li>
-<li>
-<h1></h1>
-</li>
-</ul>
-<h3 id="target属性值"><a class="header-anchor" href="#target属性值">¶</a>target属性值</h3>
-<ul>
-<li>_self（默认属性）</li>
-<li>_blank：在新打开的窗口中打开链接文档</li>
-<li>_parent：在上一级窗口中打开</li>
-<li>_top：在浏览器的整个窗口中打开，忽略任何框架</li>
-<li>框架名称：在指定的浮动框架窗口中打开链接文档</li>
-</ul>
-<h3 id="基准URL标签"><a class="header-anchor" href="#基准URL标签">¶</a>基准URL标签</h3>
-<p><code>&lt;base href=&quot;&quot; target=&quot;&quot;&gt;</code><br>
-用处是简化URL书写。在一个文档中最多出现一次，置于<code>&lt;head&gt;&lt;/head&gt;</code>标签对内</p>
-<h3 id="文件下载链接"><a class="header-anchor" href="#文件下载链接">¶</a>文件下载链接</h3>
-<p><code>&lt;a href=&quot;file_URL&quot;&gt;源端点&lt;/a&gt;</code><br>
-目标文件后缀名是.doc .rar .zip .exe时，可以获得文件下载链接</p>
-<h3 id="书签链接"><a class="header-anchor" href="#书签链接">¶</a>书签链接</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--创建书签：--&gt;</span><br><span class="line">&lt;a id&#x3D;&quot;书签名&quot;&gt;[文字 图片]&lt;&#x2F;a&gt;</span><br><span class="line"></span><br><span class="line">&lt;!--创建书签链接：--&gt;</span><br><span class="line">&lt;a href&#x3D;&quot;#书签名&quot;&gt;源端点&lt;&#x2F;a&gt;</span><br><span class="line">&lt;a href&#x3D;&quot;file_URL#书签名&quot;&gt;源端点&lt;&#x2F;a&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="浮动框架"><a class="header-anchor" href="#浮动框架">¶</a>浮动框架</h3>
-<p><code>&lt;iframe src=&quot;源文件地址&quot; name=&quot;&quot; width=&quot;&quot; height=&quot;&quot; frameborder=&quot;&quot;&gt;&lt;/iframe&gt;</code><br>
-作用：在页面中构建一个区域，以显示另一个HTML页面的内容。默认显示1px的边框。</p>
-<h2 id="表格"><a class="header-anchor" href="#表格">¶</a>表格</h2>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;table&gt;</span><br><span class="line">    &lt;caption align&#x3D;&quot;&quot; valign&#x3D;&quot;&quot;&gt;表格标题&lt;&#x2F;caption&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">        &lt;td&gt;单元格内容&lt;&#x2F;td&gt;</span><br><span class="line">    &lt;&#x2F;tr&gt;</span><br><span class="line">&lt;&#x2F;table&gt;</span><br></pre></td></tr></table></figure>
-<p>注意HTML5中很多原有属性不再支持。</p>
-<p><code>&lt;th&gt;&lt;/th&gt;</code><br>
-表头单元格。默认居中对齐并加粗显示</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;thead&gt;&lt;&#x2F;thead&gt;</span><br><span class="line">&lt;tbody&gt;&lt;&#x2F;tbody&gt;</span><br><span class="line">&lt;tfoot&gt;&lt;&#x2F;tfoot&gt;</span><br></pre></td></tr></table></figure>
-<p>表格分区。</p>
-<h2 id="表单"><a class="header-anchor" href="#表单">¶</a>表单</h2>
-<h3 id="form标签"><a class="header-anchor" href="#form标签">¶</a>form标签</h3>
-<p><code>&lt;form name=&quot;表单名称&quot; method=&quot;提交方法&quot; action=&quot;处理程序&quot;&gt;&lt;/form&gt;</code><br>
-<strong>method:表单数据从客户端传输到服务器的方法</strong></p>
-<ul>
-<li>get（默认）
-<ul>
-<li>将表单内容附加到URL地址后，对提交信息长度有限制（不超过8KB）</li>
-<li>无保密性</li>
-<li>不能传送非ASCII码的字符</li>
-</ul>
-</li>
-<li>post
-<ul>
-<li>将用户在表单中填写的数据包含在表单的主体中，一起传送给服务器上的处理程序</li>
-<li>包含ISO 10646中的所有字符<br>
-<strong>onsubmit:制定处理表单的脚本函数</strong><br>
-<strong>enctype：设置MIME类型</strong></li>
-</ul>
-</li>
-</ul>
-<h3 id="input元素"><a class="header-anchor" href="#input元素">¶</a>input元素</h3>
-<p><strong>text-文本框</strong><br>
-<code>&lt;input type=&quot;元素类型&quot; name=&quot;表单元素名称&quot;/&gt;</code><br>
-- maxlength<br>
-- size-长度（像素）<br>
-- value-默认值</p>
-<p><strong>password-密码框</strong></p>
-<p><strong>hidden-隐藏域</strong></p>
-<ul>
-<li>用于在不同页面中传递域中设置的值。</li>
-</ul>
-<p><strong>file-文件域</strong></p>
-<ul>
-<li>form的enctype需设置为“multipart/form-data</li>
-</ul>
-<p><strong>radio-单选框</strong><br>
-<code>&lt;input type=&quot;radio&quot; name=&quot;域名称&quot; value=&quot;域值&quot; checked[=&quot;checked&quot;]/&gt;</code></p>
-<ul>
-<li>同一组单选框的各个选项的name必须相同</li>
-<li>checked表示此项默认被选中，一组单选框中最多只能有一个</li>
-</ul>
-<p><strong>checkbox-复选框</strong></p>
-<p><strong>submit-提交按钮</strong><br>
-<code>&lt;input type=&quot;submit&quot; name=&quot;按钮名称&quot; value=&quot;按钮显示文本&quot;/&gt;</code></p>
-<p><strong>button-按钮：激发表单动作</strong><br>
-<code>&lt;input type=&quot;button&quot; value=&quot;按钮显示文本&quot; onclick=&quot;Javascript函数名&quot; name=&quot;按钮名称&quot;/&gt;</code></p>
-<p><strong>reset-重置按钮</strong><br>
-<code>&lt;input type=&quot;reset&quot; name=&quot;按钮名称&quot; value=&quot;按钮显示文本&quot;/&gt;</code></p>
-<p><strong>image-图像按钮：作用和提交按钮相同</strong><br>
-<code>&lt;input type=&quot;image&quot; name=&quot;按钮名称&quot; src=&quot;图像路径&quot; width=&quot;&quot; height=&quot;&quot; /&gt;</code></p>
-<h3 id="选择列表元素"><a class="header-anchor" href="#选择列表元素">¶</a>选择列表元素</h3>
-<p><strong>多项选择列表</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;select name&#x3D;&quot;列表名称&quot; size&#x3D;&quot;显示的选项数目&quot; multiple[&#x3D;&quot;multiple&quot;]&gt;</span><br><span class="line">    &lt;option value&#x3D;&quot;选项值&quot; selected&#x3D;[&quot;selected&quot;]&gt;选项一&lt;&#x2F;option&gt;</span><br><span class="line">&lt;&#x2F;select&gt;</span><br></pre></td></tr></table></figure>
-<p><strong>下拉列表</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;select name&#x3D;&quot;列表名称&quot;&gt;</span><br><span class="line">    &lt;option value&#x3D;&quot;选项值&quot;&gt;选项一&lt;&#x2F;option&gt;</span><br><span class="line">&lt;&#x2F;select&gt;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>可以不设置size属性</li>
-<li>不能设置multiple属性</li>
-<li>最多只能允许一个选项设置selected属性</li>
-</ul>
-<p><strong>文本域元素</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;textarea name&#x3D;&quot;文本域名城&quot; rows&#x3D;&quot;可见行数&quot; cols&#x3D;&quot;列数&quot;&gt;</span><br><span class="line">默认文本</span><br><span class="line">&lt;&#x2F;textarea&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="HTML5表单新增属性"><a class="header-anchor" href="#HTML5表单新增属性">¶</a>HTML5表单新增属性</h3>
-<p><strong>form属性</strong></p>
-<ul>
-<li>新增 id=&quot;&quot;</li>
-<li>定义表单元素和表单的隶属关系，实现灵活地布局页面</li>
-</ul>
-<p><strong>formaction属性</strong></p>
-<ul>
-<li>对提交按钮指定处理程序</li>
-<li>属于提交按钮的元素：submit、image</li>
-</ul>
-<p><strong>autofocus属性</strong></p>
-<ul>
-<li>针对textarea和所有input元素</li>
-<li>默认值 false</li>
-</ul>
-<p><strong>placeholder属性</strong></p>
-<ul>
-<li>针对text、textarea</li>
-<li>作用是输入提示信息，区别于text的value属性</li>
-</ul>
-<p><strong>required属性</strong></p>
-<ul>
-<li>非空校验</li>
-</ul>
-<p><strong>提交按钮新增取消检验属性</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--方式一：关闭整个表单的检验--&gt;</span><br><span class="line">&lt;form novalidate&gt;</span><br><span class="line"></span><br><span class="line">&lt;!--方式二：对提交按钮设置formnovalidate属性，由指定的提交按钮关闭表单的输入校验--&gt;</span><br><span class="line">&lt;input type&#x3D;&quot;submit&quot; formnovalidate&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="HTML5表单新增的input元素类型"><a class="header-anchor" href="#HTML5表单新增的input元素类型">¶</a>HTML5表单新增的input元素类型</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type&#x3D;&quot;tel&quot; &#x2F;&gt;</span><br><span class="line"></span><br><span class="line">&lt;input type&#x3D;&quot;email&quot; name&#x3D;&quot;&quot; multiple &#x2F;&gt;</span><br><span class="line"></span><br><span class="line">&lt;input type&#x3D;&quot;url&quot; name&#x3D;&quot;&quot; &#x2F;&gt;</span><br><span class="line"></span><br><span class="line">&lt;input type&#x3D;&quot;number&quot; min&#x3D;&quot;&quot; max&#x3D;&quot;&quot; step&#x3D;&quot;改变数值的步长&quot; name&#x3D;&quot;&quot;&#x2F;&gt;</span><br><span class="line"></span><br><span class="line">&lt;input type&#x3D;&quot;range&quot; min&#x3D;&quot;&quot; max&#x3D;&quot;&quot; step&#x3D;&quot;改变数值的步长&quot; name&#x3D;&quot;&quot; &#x2F;&gt;</span><br><span class="line">&lt;!--[0,100];滑块默认停在中间位置，可通过value属性设置--&gt;</span><br><span class="line"></span><br><span class="line">&lt;input type&#x3D;&quot;search&quot; name&#x3D;&quot;&quot; &#x2F;&gt;</span><br><span class="line">&lt;!--输入关键词后会出现“X”按钮，清空方便--&gt;</span><br><span class="line"></span><br><span class="line">&lt;input type&#x3D;&quot;color&quot; name&#x3D;&quot;&quot; &#x2F;&gt;</span><br><span class="line"></span><br><span class="line">&lt;input type&#x3D;&quot;date&quot; name&#x3D;&quot;&quot; &#x2F;&gt;</span><br><span class="line"></span><br><span class="line">&lt;input type&#x3D;&quot;time&#x2F;datetime&#x2F;datetime-local&#x2F;week&#x2F;month&quot; name&#x3D;&quot;&quot; &#x2F;&gt;</span><br></pre></td></tr></table></figure>
-<h1>CSS部分</h1>
-<h2 id="基本语法和应用方式"><a class="header-anchor" href="#基本语法和应用方式">¶</a>基本语法和应用方式</h2>
-<h3 id="基本语法"><a class="header-anchor" href="#基本语法">¶</a>基本语法</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;*注释*&#x2F;</span><br><span class="line">选择器&#123;</span><br><span class="line">      属性1:  属性值1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="应用方式"><a class="header-anchor" href="#应用方式">¶</a>应用方式</h3>
-<ul>
-<li>行内式<br>
-<code>&lt;标签名 style=&quot;属性1: 属性值1;&quot;&gt;</code></li>
-<li>内嵌式</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type&#x3D;&quot;text&#x2F;css&quot;&gt;</span><br><span class="line">    选择器&#123; </span><br><span class="line">        属性1:  属性值1;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;&#x2F;style&gt;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>链接式（实现在多个页面重复使用CSS）<br>
-<code>&lt;link rel=&quot;stylesheet&quot; type=&quot;txt/css&quot; href=&quot;.css文件&quot;&gt;</code></li>
-<li>优先级
-<ul>
-<li>行内式样式&gt;内嵌式样式&gt;链接外部样式</li>
-<li>ID选择器&gt;class选择器|伪类选择器|属性选择器&gt;元素选择器|伪元素选择器&gt;通配符选择器|子选择器|相邻兄弟选择器</li>
-<li>最近原则</li>
-<li><code>!important</code>最高级</li>
-</ul>
-</li>
-</ul>
-<h2 id="基本选择器"><a class="header-anchor" href="#基本选择器">¶</a>基本选择器</h2>
-<h3 id="HTML元素名"><a class="header-anchor" href="#HTML元素名">¶</a>HTML元素名</h3>
-<p>p h1 div</p>
-<h3 id="类选择器"><a class="header-anchor" href="#类选择器">¶</a>类选择器</h3>
-<p><code>.类选择器名</code></p>
-<ul>
-<li>区分大小写</li>
-<li>添加class属性</li>
-<li>优先级高于元素选择器</li>
-</ul>
-<h3 id="ID选择器"><a class="header-anchor" href="#ID选择器">¶</a>ID选择器</h3>
-<p><code>#ID选择器名</code></p>
-<ul>
-<li>第一个字符不能是数字，不允许有空格，区分大小写</li>
-<li>添加ID属性</li>
-<li>类在HTML页面中可以重名，ID名称则必须唯一。对不同元素设置相同id会导致Javascript调用id时出错</li>
-</ul>
-<h3 id="伪类选择器"><a class="header-anchor" href="#伪类选择器">¶</a>伪类选择器</h3>
-<p><code>选择器名: 伪类</code><br>
-如：<code>a.second:link</code></p>
-<ul>
-<li>向某些选择器添加特殊的效果</li>
-<li>a :hover必须位于a:link和a:visited之后，a:active必须位于a :hover之后</li>
-</ul>
-<h3 id="伪元素选择器"><a class="header-anchor" href="#伪元素选择器">¶</a>伪元素选择器</h3>
-<p><code>选择器名: 伪元素</code></p>
-<ul>
-<li>CSS3中用2个冒号</li>
-<li>常用的
-<ul>
-<li>:first-letter</li>
-<li>:first-line</li>
-<li>:before</li>
-<li>:after</li>
-</ul>
-</li>
-</ul>
-<h3 id="通用选择器"><a class="header-anchor" href="#通用选择器">¶</a>通用选择器</h3>
-<p><code>*</code></p>
-<ul>
-<li>一般用于重置文档各元素的默认样式（内外边距）</li>
-</ul>
-<h3 id="复合选择器"><a class="header-anchor" href="#复合选择器">¶</a>复合选择器</h3>
-<p><strong>交集选择器</strong><br>
-<code>元素选择器.类选择器或#ID选择器</code><br>
-<strong>并集选择器/分组选择器</strong><br>
-<code>选择器1,选择器2,选择器3</code><br>
-<strong>后代选择器/包含选择器</strong><br>
-<code>选择器1 选择器2 选择器3</code><br>
-右边的选择器作为左边的选择器的后代。<br>
-<strong>子元素选择器</strong><br>
-<code>选择器1&gt;选择器2</code><br>
-例如，<code>div&gt;span</code> 选择div元素子元素的所有span元素<br>
-<strong>相邻兄弟选择器</strong><br>
-<code>选择器1+选择器2</code><br>
-选择紧接在选择器1指定元素后出现的选择器2指定的元素，且这两个元素拥有共同的父元素。</p>
-<h2 id="常用属性"><a class="header-anchor" href="#常用属性">¶</a>常用属性</h2>
-<h3 id="文本属性"><a class="header-anchor" href="#文本属性">¶</a>文本属性</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">color: red|#ff0000|rgb(255,0,0)|inherit;</span><br><span class="line"></span><br><span class="line">text-align: left|right|center|inherit;</span><br><span class="line"></span><br><span class="line">&#x2F;*设置每段文本首行字符的缩进距离*&#x2F;</span><br><span class="line">text-indent: length(单位:px pt em)|%|inherit;</span><br><span class="line"></span><br><span class="line">text-decoration: none|underline|overline|line-through|inherit;</span><br><span class="line"></span><br><span class="line">letter-spacing: normal|length|inherit;</span><br><span class="line"></span><br><span class="line">&#x2F;*CSS定义的word：由任何非空白字符组成的串，并由某种空白字符包围*&#x2F;</span><br><span class="line">word-spacing: normal|length|inherit;</span><br><span class="line"></span><br><span class="line">&#x2F;*行高：上下文本行的base line的垂直距离*&#x2F;</span><br><span class="line">line-height: normal|number（效果与em单位相同）|length|%|inherit;</span><br></pre></td></tr></table></figure>
-<p><img data-src="https://i.loli.net/2020/06/28/SIMhbLRADVQi7F8.png" alt="行高示例.png"></p>
-<h3 id="字体属性"><a class="header-anchor" href="#字体属性">¶</a>字体属性</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">font-weight: normal|bold|lighter|bolder|number|inherit;</span><br><span class="line">&#x2F;*number:400相当于normal，700相当于bold*&#x2F;</span><br><span class="line"></span><br><span class="line">font-style: normal|italic|oblique|inherit;</span><br><span class="line"></span><br><span class="line">font-size: medium|length|%|inherit;</span><br><span class="line"></span><br><span class="line">font-family: 字体族1,字体族2,···,通用字体族|inherit;</span><br><span class="line">&#x2F;*通用字体族：serif san-serif（无衬线字体） monospace cursive fantasy*&#x2F;</span><br><span class="line"></span><br><span class="line">&#x2F;*综合写法:顺序；必须至少提供font-size和font-family；font-size&#x2F;line-height必须用&#x2F;，不能分开写。*&#x2F;</span><br><span class="line">font: font-style font-weight font-size&#x2F;line-height font-family;</span><br></pre></td></tr></table></figure>
-<h3 id="背景属性"><a class="header-anchor" href="#背景属性">¶</a>背景属性</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">background-color: 表示颜色的|transparent|inherit;</span><br><span class="line">background-image: url()|inherit;</span><br><span class="line">background-repeat: repeat|repeat-x|repeat-y|no-repeat|inherit;</span><br><span class="line">background-position: 表示位置的关键字|x% y%|xpos ypos;</span><br><span class="line">background-attachment: scroll|fixed|inherit;</span><br><span class="line"></span><br><span class="line">&#x2F;*综合写法*&#x2F;</span><br><span class="line">background: background-color background-image background-position background-repeat background-attachment;</span><br></pre></td></tr></table></figure>
-<h3 id="列表属性"><a class="header-anchor" href="#列表属性">¶</a>列表属性</h3>
-<p>用于设置列表项目的符号类型。常用属性</p>
-<ul>
-<li>list-style</li>
-<li>list-style-image</li>
-<li>list-style-type</li>
-</ul>
-<h3 id="表格属性"><a class="header-anchor" href="#表格属性">¶</a>表格属性</h3>
-<ul>
-<li>border-collase</li>
-<li>border-spacing</li>
-<li>caption-side</li>
-<li>table-layout</li>
-</ul>
-<h3 id="display属性"><a class="header-anchor" href="#display属性">¶</a>display属性</h3>
-<p><code>display: none|block|inline|inline-block|inherit;</code><br>
-规定元素应该生成的框的类型。</p>
-<h2 id="盒子模型"><a class="header-anchor" href="#盒子模型">¶</a>盒子模型</h2>
-<p><img data-src="https://i.loli.net/2020/06/28/ArX2vYKZNBgticM.jpg" alt="盒子模型.JPG"><br>
-当我们指定一个 CSS 元素的width和height属性时，只是设置内容区域的宽度和高度。</p>
-<h3 id="盒子模型的属性"><a class="header-anchor" href="#盒子模型的属性">¶</a>盒子模型的属性</h3>
-<ul>
-<li>border-style/width/color
-<ul>
-<li>如果有2个属性值：上下+左右</li>
-<li>如果有3个属性值：上-左右-下</li>
-<li>如果有4个属性值：顺时针方向</li>
-<li>border-top|left|right|bottom-style</li>
-</ul>
-</li>
-<li>padding</li>
-<li>margin</li>
-</ul>
-<h3 id="外边距的合并"><a class="header-anchor" href="#外边距的合并">¶</a>外边距的合并</h3>
-<p><strong>相邻元素</strong><br>
-当两个垂直外边距相遇时，它们将形成一个外边距。合并后的外边距的高度等于两个发生合并的外边距的高度中的较大者。<br>
-<img data-src="https://i.loli.net/2020/06/28/3hxESlF4Ngkjc5d.jpg" alt="外边距合并相邻元素.JPG"><br>
-<strong>元素自身</strong><br>
-无border无padding无content的空元素，上下边距分别和相邻元素合并，然后自己的上下边距合并。<br>
-<img data-src="https://i.loli.net/2020/06/28/6e4dNzXr2EFQ9CO.jpg" alt="空元素自身合并.JPG"><br>
-<strong>父子元素</strong><br>
-父元素中不设置padding和border时，父元素和子元素的外边距重合。当只设置子元素的margin-top，父子元素发生外边距合并，整体下移。<br>
-<img data-src="https://i.loli.net/2020/06/28/exSXDEn5MpgkWKh.jpg" alt="父子元素.JPG"></p>
-<h2 id="排版方式"><a class="header-anchor" href="#排版方式">¶</a>排版方式</h2>
-<h3 id="标准流排版"><a class="header-anchor" href="#标准流排版">¶</a>标准流排版</h3>
-<p>不使用其他的与排列和定位相关的特殊CSS规则。<br>
-标准流中，块级元素独占一行，垂直放置；在水平方向自动伸展，直到包含它的父级元素的边界。行级元素在水平方向上一个接一个地排列。</p>
-<h3 id="浮动排版"><a class="header-anchor" href="#浮动排版">¶</a>浮动排版</h3>
-<p>大多数元素都在正常流中，要让一个元素不在正常流中，唯一的方法就是使之成为浮动元素或定位元素。<br>
-浮动的盒子在水平方向上移动，直到它的外边缘碰到包含框或另一个浮动框的边框为止。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">float：none|left|right;&#x2F;*浮动属性；相应的对象被视作块级元素*&#x2F;</span><br><span class="line">clear: none|left|right|both;&#x2F;*浮动清除：定义在元素的左右两侧是否允许出现浮动元素*&#x2F;</span><br></pre></td></tr></table></figure>
-<p><strong>特点</strong></p>
-<ul>
-<li>浮动流中，无论是块级元素/行内元素/行内块级元素都可以水平排版，都可以设置宽高</li>
-<li>任何显示在浮动元素下方的HTML元素都会在网页中上移（好像浮动元素不存在一样），如果上移的元素中包含文字，则会环绕在浮动元素的周围（文字围移）</li>
-<li>向同一方向浮动的元素形成流式布局，排满一行或一行剩下的空间不够时，自动换行。如果前面已排列好的浮动元素的高度大于后面的浮动元素，换行时“卡住”。<br>
-<img data-src="https://i.loli.net/2020/06/29/OvBwRqNDKLT6jEa.jpg" alt="浮动卡住.JPG"></li>
-</ul>
-<p><strong>浮动的副作用</strong></p>
-<ul>
-<li>元素一旦设置为浮动，其下方的元素将上移，导致网页布局混乱</li>
-<li>当一个元素的所有子元素都设置为浮动时，由于脱离文档流，导致父元素的高度无法根据子元素自适应，收缩为一条线或高度仅为内边距+内容高度+上下边框（有瑕疵的解决方式：设置父元素高度，但仍不能自适应）
-<ul>
-<li>在所有子元素的最后面添加一个div元素，并设置为<code>clear：both;height:0px;</code>；这个新加的元素有时反而可能造成网页布局混乱</li>
-<li>通过父元素的after伪元素清除浮动</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.父元素类选择器名:after&#123;</span><br><span class="line">    content: &quot;&quot;;</span><br><span class="line">    display: block;</span><br><span class="line">    clear: both;</span><br><span class="line">&#125;</span><br><span class="line">.父元素类选择器名&#123;</span><br><span class="line">    zoom:1;&#x2F;*兼容IE6 IE7清除浮动设置*&#x2F;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="定位排版"><a class="header-anchor" href="#定位排版">¶</a>定位排版</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">position: static|relative|absolute|fixed;</span><br><span class="line">&#x2F;*relative：相对于它在标准流中的位置进行偏移，原来所占的空间保留；absolute：相对于已定位的祖先元素&#x2F;最外层的包含框，原来所占空间不保留*&#x2F;</span><br><span class="line">&#x2F;*绝对定位的元素的位置会随滚动条的拖动而变化*&#x2F;</span><br><span class="line"></span><br><span class="line">top|right|left|bottom: value|%;</span><br><span class="line">overflow: visible|hidden|auto|scroll|inherit;</span><br><span class="line">z-index: number; &#x2F;*设置元素的堆叠顺序，值大的堆叠在值小的元素上面*&#x2F;</span><br></pre></td></tr></table></figure>
+          <h1>捣腾博客相关</h1>
+<p>这两天终于把idea安装了<br>
+Project的排布方式加上不同颜色让看很多文件变得很方便<br>
+当然，之前用NotePad也有NotePad的好处</p>
+<p>针对博客做了一些小改动：</p>
+<h2 id="建了个相册页面"><a class="header-anchor" href="#建了个相册页面">¶</a>建了个相册页面</h2>
+<p>在网上找了一个很心水的悬停效果<br>
+对图片的自适应也大体满意</p>
+<p>放到自己博客的过程中学习到一个比较有用的CSS3属性：<code>box-sizing</code><br>
+这个属性是对原本的盒子模型的优化<br>
+通过将HTML元素构造为“框” 将元素的内外边距放入框中<br>
+原本元素的宽度定义的只是content的宽度<br>
+此时宽度被定义为“width=content+padding+border”<br>
+这样做的好处是只要以百分比方式设置好框的width<br>
+即使padding和border是以绝对值设置的<br>
+元素的content部分能够随着实际的宽度自动收缩</p>
+<p>关于盒子模型和这一属性，这篇文章提供了很高的参考价值；</p>
+<blockquote>
+<p>《从box-sizing:border-box属性入手，来了解盒模型》:<br>
+<span class="exturl" data-url="aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2NzgwMzE3L2FydGljbGUvZGV0YWlscy84MDczNjUxND91dG1fc291cmNlPWJsb2d4Z3d6Mw==">https://blog.csdn.net/qq_26780317/article/details/80736514?utm_source=blogxgwz3<i class="fa fa-external-link-alt"></i></span></p>
+</blockquote>
+<p>在制造图片的上下参差感时，用到了<code>nth-child(n)</code>这个选择器<br>
+意为匹配属于其父元素的第n个子元素<br>
+通过an+b简单的表达式能够比较灵活地选择元素<br>
+此外，还略微学习了一些SVG的知识<br>
+不过，相册的具体页面还没搞<br>
+也是在思考以怎样的方式布局<br>
+特别是想兼顾加载速度和美观度</p>
+<h2 id="更换了背景图"><a class="header-anchor" href="#更换了背景图">¶</a>更换了背景图</h2>
+<p>把式的背景换掉了TT<br>
+实在是因为图片太大了<br>
+虽然用压缩工具压了还是很大</p>
+<h2 id="关闭了自建分类页的目录"><a class="header-anchor" href="#关闭了自建分类页的目录">¶</a>关闭了自建分类页的目录</h2>
+<p>如果在文章中使用标题标签对 Hexo会自动生成文章目录<br>
+照道理来讲自建的分类页面不应该适用这一规则<br>
+但建相册页面时用到了h2标签对 结果出现了目录<br>
+百度提供了一些老版本下更改sidebar.swig的办法<br>
+然后发现新版根本不用这么麻烦<br>
+只要在新建页面的md文档中的Front-matter区域把toc关掉就好：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">toc:</span><br><span class="line">  enable: false</span><br></pre></td></tr></table></figure>
+<h1>阅读笔记</h1>
+<p>看到黄铮卸任拼多多CEO的新闻<br>
+感觉这是一个很有决断力的人<br>
+这样一个聪明人做拼多多绝不仅是看到所谓下沉市场的机会<br>
+而是看清了即便是一二线城市的电商用户 其购买需求和使用场景也并非单一的<br>
+既有高单价商品的购买需求 也有低维更日常的需求<br>
+只是既然集中在低单价商品上<br>
+感觉拼多多的GMV增长和利润率仍有很强的不确定性<br>
+有空看下具体数据~</p>
+<p>近期美国的BLM运动愈演愈烈<br>
+人类文明进步到今天为何还会有这样的歧视乃至敌视等问题暂且不论<br>
+只是在中间演变出来的种种话题间<br>
+人脸识别技术中”洗白奥巴马“的一条Twitter引发了对技术中立的讨论<br>
+技术本身是没有善恶对错这类价值观的，人才有价值观。<br>
+但技术是有所谓的使用场景的，由此带来了技术的倾向性。<br>
+技术的倾向性使其有如具有引力一般，其中一些因此更容易吸引和指向人性中孱弱的部分。<br>
+很多人是难以挣脱的。归根到底还在于人本身啊。</p>
+
       
     </div>
 
@@ -646,7 +343,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/13/">13</a><a class="extend next" rel="next" href="/page/5/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/14/">14</a><a class="extend next" rel="next" href="/page/5/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -714,7 +411,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">13</span>
+          <span class="site-state-item-count">14</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -727,7 +424,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">18</span>
+        <span class="site-state-item-count">20</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
